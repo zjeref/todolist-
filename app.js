@@ -67,6 +67,8 @@ const emailid1 = input[1];
 const password1 = input[2];
 const passwordconfirm1 = input[3];
 
+//values
+
 let userCheck = false;
 let emailCheck = false;
 let passCheck = false;
@@ -90,7 +92,9 @@ function checkInputSign() {
         userCheck = false;
     } else {
         setSucessFor(username1);
+        localStorage.setItem('uName', usernameValue1);
         userCheck = true;
+        
     }
 
     if(emailidValue1==="") {
@@ -104,6 +108,7 @@ function checkInputSign() {
     } else {
         setSucessFor(emailid1);
         emailCheck = true;
+        localStorage.setItem('email', emailidValue1);
     }
 
     if(passwordValue1 === "") {
@@ -125,6 +130,7 @@ function checkInputSign() {
     } else {
         setSucessFor(passwordconfirm1);
         ConPassCheck = true;
+        localStorage.setItem('pass', password2confirm1);
     }
 
 }
@@ -157,7 +163,6 @@ function setSucessFor (input) {
 
 
 
-
 function confirmValidate(){
     if (userCheck && passCheck && ConPassCheck && emailCheck === true) {
         console.log("gg")
@@ -166,3 +171,34 @@ function confirmValidate(){
 }
 
 
+
+//login 
+
+
+
+form2.addEventListener('submit', e => {
+    e.preventDefault();
+    checkLogin();
+})
+
+function checkLogin(){
+    const input2 = form2.querySelectorAll('input')
+    const userNameCheck = input2[0].value;
+    const passwordCheck = input2[1].value;
+    const uName = localStorage.getItem('uName');
+    const pass = localStorage.getItem('pass');
+    const small = form2.querySelector('small')
+
+    console.log(userNameCheck)
+    console.log(passwordCheck)
+
+    if(userNameCheck===uName && passwordCheck===pass) {
+        form2.submit();
+    }
+    else {
+        small.innerText = "Incorrect Username or Password";
+    }
+
+
+
+}

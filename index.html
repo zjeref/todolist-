@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>TO DO LIST</title>
+
+</head>
+
+<body>
+    <div id="mainbody">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/Frame_6.svg" alt="">
+                <span>Organizer</span>
+            </div>
+            <div class="menus">
+                <span>Already have an account? </span>
+                <a class="btn" id="signin" href="#">Sign In</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="started">
+                <div class="image">
+                    <img src="./images/main.svg" alt="">
+                </div>
+                <div class="getstarted">
+                    <h1>Organize it <br>all
+                        with Organizer</h1>
+                    <p>Regain clarity and calmness by getting all those tasks out of you head and onto your to-do list
+                    </p>
+                    <a class="btn" id="signup" href="#">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signup-modal">
+        <div class="modal-content">
+            <span class="fa fa-times close"></span>
+            <form action="/" id='form'>
+                <div class="info">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="logs">
+                    <div class="form-rows">
+                        <label for="input-user">
+                            <p class="fa fa-user">Username</p>
+                        </label>
+                        <input class="" type="text" name="input-user" id="input-user" placeholder="Enter your Username"
+                            required>
+                        <i class="correct fa fa-check-circle"></i>
+                        <span class="error fa fa-exclamation-circle"></span>
+                        <small></small>
+                    </div>
+
+                    <div class="form-rows">
+                        <label for="email-id">
+                            <p class="fa fa-envelope">Email ID</p>
+                        </label>
+                        <input class="" type="email" name="email-id" id="email-id"
+                            placeholder="Enter Your Email Address" required>
+                        <i class="correct fa fa-check-circle"></i>
+                        <span class="error fa fa-exclamation-circle"></span>
+                        <small></small>
+                    </div>
+
+                    <div class="form-rows">
+                        <label for="password-user">
+                            <p class="fa fa-key">New Password</p>
+                        </label>
+                        <input class="" type="password" name="password-user" id="password-user"
+                            placeholder="Enter your Password" required>
+                        <i class="correct fa fa-check-circle"></i>
+                        <span class="error fa fa-exclamation-circle"></span>
+                        <small></small>
+                    </div>
+
+                    <div class="form-rows">
+                        <label for="password-confirm">
+                            <p class="fa fa-key">Confirm Password</p>
+                        </label>
+                        <input class="" type="password" name="password-confirm" id="password-confirm"
+                            placeholder="Re-Enter Your password" required>
+                        <i class="correct fa fa-check-circle"></i>
+                        <span class="error fa fa-exclamation-circle"></span>
+                        <small></small>
+                    </div>
+                    <div class="agree">
+                        <input type="checkbox" name="rempass" id="rempass" required>
+                        <label for="rempass">I agree to the <a href="#">Terms </a> and <a href="#"> Privacy
+                                Policy</a></label>
+                    </div>
+                    <div>
+                        <button class="btn cancelbtn">Cancel</button>
+                        <button type="submit" class="btn submitbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="login-modal">
+        <div class="modal-content">
+            <div class="fa fa-times close"></div>
+            <form action="/" id='form2'>
+                <div class="info">
+                    <h1>Log In</h1>
+                </div>
+                <div class="logs">
+                    <div class="form-rows">
+                        <label for="input-user2">
+                            <p class="fa fa-user">Username</p>
+                        </label>
+                        <input class="" type="text" name="input-user" id="input-user2" placeholder="Enter your Username"
+                            required>
+                        <i class="correct fa fa-check-circle"></i>
+                        <span class="error fa fa-exclamation-circle"></span>
+                        <small></small>
+                    </div>
+
+                    <div class="form-rows">
+                        <label for="password-user2">
+                            <p class="fa fa-key">Password</p>
+                        </label>
+                        <input class="" type="password" name="password-user" id="password-user2"
+                            placeholder="Enter your Password" required>
+                        <i class="correct fa fa-check-circle"></i>
+                        <span class="error fa fa-exclamation-circle"></span>
+                        <small></small>
+                    </div>
+
+                    <div class="agree">
+                        <input class="" type="checkbox" name="rempass" id="rempass2">
+                        <label for="rempass2">Remember my password</label>
+                    </div>
+                    <div>
+                        <button class="btn cancelbtn">Cancel</button>
+                        <button type="submit" class="btn submitbtn">Sign Up</button>
+                    </div>
+                    <div class="agree">
+                        <p>Don't Have an account? <a href="#" id="signup2">Sign up here</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

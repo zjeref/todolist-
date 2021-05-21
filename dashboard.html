@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styledboard.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="dashboard">
+            <div class="logo">
+                <img src="./images/Frame_6.svg" alt="">
+                <h1>Organiser</h1>
+            </div>
+            <div class="menus">
+                <ul>
+                    <li><i class="fa fa-calendar"></i><span>Today</span></li>
+                    <li><i class="fa fa-tasks"></i><span> All Tasks</span></li>
+                </ul>
+            </div>
+            <div id="settings">
+                <p><i class="fa fa-cog"></i>Log Out</p>
+            </div>
+        </div>
+        <div class="list-field">
+            <div class="date">
+                <p>Today</p>
+                <p id="date"></p>
+            </div>
+            <div class="active-area">
+                <div class="border">
+                    <h2 class="list-border"><span class="line">Active</span></h2>
+                    <ul id="active-list">
+                        <!-- <li><input type="radio">gg <span></span></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="completed-list">
+                <h2 class="list-border"><span class="line">Completed</span></h2>
+            </div>
+            <div class="add">
+                <form action="">
+                    <input id="inputTask" type="text" placeholder="+ Add new task">
+                    <button type="submit" id="subBTN">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="dboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+:root {
+  --primary: #f96597;
+  --secondary: #123c69;
+  --other: rgba(250, 149, 183, 0.09);
+  --white: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 
+DASHBOARD  */
+
+.dashboard {
+  width: 15%;
+  height: 100vh;
+  background-color: var(--primary);
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  color: var(--white);
+  padding: 10px;
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+}
+
+.menus ul {
+  padding: 0;
+}
+
+.menus li {
+  list-style: none;
+  margin: 10px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.menus li span {
+  padding: 0 7px;
+}
+
+#settings {
+  margin-top: auto;
+  padding: 0.8em;
+  color: var(--white);
+  cursor: pointer;
+  position: sticky;
+}
+
+#settings i {
+  margin-right: 5px;
+}
+
+/* list field */
+
+.list-field {
+  width: 85%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+/* date */
+
+.date {
+  color: var(--primary);
+  margin-bottom: 2em;
+}
+
+#date {
+  font-weight: 500;
+}
+
+.date p {
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+.list-border {
+  color: var(--primary);
+  width: 100%;
+  border-bottom: 1px solid var(--primary);
+  line-height: 0.1em;
+  margin: 1em 2em 3em 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.list-border span {
+  background-color: white;
+  padding-right: 10px;
+}
+
+/* active */
+
+#active-list {
+  padding: 0;
+}
+
+#active-list li {
+  list-style: none;
+  font-size: 1rem;
+  margin: 0.2em 0;
+  padding: 0.6em 0.6em;
+  background-color: var(--other);
+}
+
+#active-list input {
+  margin-right: 1.2em;
+  transform: scale(1.5);
+}
+
+.check:checked {
+  outline-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.add {
+  width: 100%;
+}
+
+.add form {
+  width: 80%;
+  position: absolute;
+  bottom: 3em;
+}
+
+#inputTask {
+  width: 30%;
+  padding: 0.5em;
+}
+
+#subBTN {
+  padding: 0.5em 1em;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 6px;
+  color: #f2f2f2;
+}

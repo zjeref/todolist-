@@ -167,14 +167,13 @@ function confirmValidate(){
     if (userCheck && passCheck && ConPassCheck && emailCheck === true) {
         console.log("gg")
         form1.submit();
+        window.location = "http://127.0.0.1:5500/dashboard.html";
     }
 }
 
 
 
 //login 
-
-
 
 form2.addEventListener('submit', e => {
     e.preventDefault();
@@ -194,11 +193,15 @@ function checkLogin(){
 
     if(userNameCheck===uName && passwordCheck===pass) {
         form2.submit();
+        window.location = "http://127.0.0.1:5500/dashboard.html";
     }
     else {
         small.innerText = "Incorrect Username or Password";
     }
-
-
-
 }
+
+
+//dashboard
+
+let dt = new Date();
+document.getElementById("date").innerHTML = dt.toLocaleDateString();
